@@ -29,9 +29,12 @@ This project showcases various design patterns for building user interfaces in F
 
 ### MVI (Model-View-Intent):
 
-- Employs a unidirectional data flow.
-- The View dispatches Intents (user actions) to the Bloc (Business Logic Component).
-- The Bloc processes Intents, updates the state, and emits changes to the View through a BlocBuilder.
+The `mvi` folder demonstrates MVI with manual state management. You'll find:
+
+- A `CounterState` class to hold the current count.
+- A `ValueNotifier` instance holding the current `CounterState`.
+- Methods to dispatch Intents (increment/decrement) that update the state in the `ValueNotifier`.
+- A View that displays the current count and dispatches Intents on button clicks.
 
 ## Exploring the Code
 
