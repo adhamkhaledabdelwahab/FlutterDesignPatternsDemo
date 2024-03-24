@@ -1,0 +1,1 @@
+enum CounterIntent { increment, decrement }
